@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+  html,
+  body,
+  #stage {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: transparent;
+  }
+
+  .dog {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: fill; /* keeps the whole dog visible */
+      pointer-events: none;
+  }
+  
+</style>
+</head>
+<body>
+  <div id="stage"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>
