@@ -15,7 +15,7 @@ You need [Node.js](https://nodejs.org) installed. Then, in this folder:
 npm install
 ```
 
-## 2. Add dog assets
+## 2. Add dog assets (optional)
 
 Put files here:
 
@@ -72,8 +72,9 @@ const MAX_SNIFF_MS = 6000;               // how long it sniffs (max)
 const NOTCH_Y_RANGE = [10, 60];          // vertical position near the camera
 ```
 
-## Packaging as a standalone .app (optional, later)
+If you'd like to create an actual app:
+```bash
+npm run dist
+```
 
-Once you're happy with it, [electron-builder](https://www.electron.build/)
-can package this into a double-clickable macOS app that runs at login,
-instead of launching via `npm start`. Ask if you want that set up.
+Then open the .dmg within the dist folder.
